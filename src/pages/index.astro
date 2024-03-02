@@ -2,6 +2,8 @@
 const {
     geo: { city },
 } = Astro.locals.netlify.context;
+
+console.log(Astro.locals.netlify.context.geo.city);
 ---
 
 <h1>Hello there, friendly visitor from {city}!</h1>
