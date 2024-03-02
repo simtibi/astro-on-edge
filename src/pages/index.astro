@@ -1,9 +1,17 @@
 ---
-const {
-    geo: { city },
-} = Astro.locals.netlify.context;
 
-console.log(Astro.locals.netlify.context.geo.city);
 ---
 
-<h1>Hello there, friendly visitor from {city}!</h1>
+<main>
+    <h1>Netlify Edge Functions with Astro</h1>
+
+    Welcome, visitor from COUNTRYNAME!
+</main>
+
+<style>
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
